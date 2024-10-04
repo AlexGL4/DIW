@@ -1,0 +1,31 @@
+
+
+$anchura: 10rem;
+$altura: 10rem;
+$color-primario: #0080ff;
+
+#contenedor{
+    display: flex;
+}
+div.boton{
+    width: $anchura;
+    height: $altura;
+}
+
+@for $i from 1 to 10 {
+    #caja#{$i}{
+        background-color: adjust-color($color-primario,$green:+($i*20));
+    }
+}
+/*#caja1{
+    background-color: $color-primario;
+}
+#caja2{
+    background-color: adjust-color($color-primario, $blue: -20);
+}
+#caja3{
+    background-color: adjust-color($color-primario, $blue: -40);
+}
+#caja4{
+    background-color: adjust-color($color-primario, $blue: -60);
+}*/
